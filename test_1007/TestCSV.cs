@@ -22,7 +22,7 @@ namespace test_1007
         {
             StreamReader sr = new StreamReader(new FileStream("market.csv", FileMode.Open)
                 , Encoding.Default);
-            var str = "";
+            var str = "blank";
             var line = sr.ReadLine();
    
             while (sr.EndOfStream == false)
