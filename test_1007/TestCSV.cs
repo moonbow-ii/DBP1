@@ -17,14 +17,14 @@ namespace test_1007
         {
             InitializeComponent();
         }
-
+        //버튼을 통해서 csv파일 불러오기
         private void buttonOpenCSV_Click(object sender, EventArgs e)
         {
             StreamReader sr = new StreamReader(new FileStream("market.csv", FileMode.Open)
-                , Encoding.Default);
-            var str = "blank";
+            , Encoding.Default);
+            var str = "";
             var line = sr.ReadLine();
-   
+
             while (sr.EndOfStream == false)
             {
                 var values = line.Split(',');
@@ -32,7 +32,7 @@ namespace test_1007
                 {
                     line = sr.ReadLine();
                     str = string_value;
-                    CSV_text.Text += str.PadRight(30-string_value.Length);
+                    CSV_text.Text += str.PadRight(30 - string_value.Length);
                 }
                 Console.WriteLine("입력완료");
                 CSV_text.Text += "\r\n";
