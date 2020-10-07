@@ -22,7 +22,7 @@ namespace test_1007
         {
             StreamReader sr = new StreamReader(new FileStream("market.csv", FileMode.Open)
                 , Encoding.Default);
-            var str = "";
+            var str = "blank String";
             var line = sr.ReadLine();
    
             while (sr.EndOfStream == false)
@@ -34,6 +34,7 @@ namespace test_1007
                     str = string_value;
                     CSV_text.Text += str.PadRight(30-string_value.Length);
                 }
+                Console.WriteLine("입력완료");
                 CSV_text.Text += "\r\n";
             }
             sr.Close();
