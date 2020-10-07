@@ -17,7 +17,7 @@ namespace test_1007
         {
             InitializeComponent();
         }
-
+        //버튼을 통해서 csv파일 불러오기
         private void buttonOpenCSV_Click(object sender, EventArgs e)
         {
             StreamReader sr = new StreamReader(new FileStream("market.csv", FileMode.Open)
