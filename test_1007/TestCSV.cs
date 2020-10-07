@@ -35,7 +35,6 @@ namespace test_1007
                     CSV_text.Text += str.PadRight(30 - string_value.Length);
                 }
                 Console.WriteLine("입력완료");
-
                 CSV_text.Text += "\r\n";
             }
             sr.Close();
