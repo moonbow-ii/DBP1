@@ -36,7 +36,7 @@ namespace test_1007
                 }
                 Console.WriteLine("입력완료");
                 CSV_text.Text += "\r\n";
-            }//가능가능 삽가능
+            }//conflict_test
             sr.Close();
         }
     }
