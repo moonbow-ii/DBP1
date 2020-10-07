@@ -28,11 +28,11 @@ namespace test_1007
             while (sr.EndOfStream == false)
             {
                 var values = line.Split(',');
-                foreach (String string_value in values)
+                foreach (String value in values)
                 {
                     line = sr.ReadLine();
-                    str = string_value;
-                    CSV_text.Text += str.PadRight(30-string_value.Length);
+                    str = value;
+                    CSV_text.Text += str.PadRight(30-value.Length);
                 }
                 CSV_text.Text += "\r\n";
             }
