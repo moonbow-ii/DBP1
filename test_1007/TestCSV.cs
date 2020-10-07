@@ -36,7 +36,7 @@ namespace test_1007
                 }
                 Console.WriteLine("입력완료");
                 CSV_text.Text += "\r\n";
-            }//conflict_test
+            }//merge_test
             sr.Close();
         }
     }
