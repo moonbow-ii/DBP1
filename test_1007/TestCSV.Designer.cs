@@ -34,7 +34,7 @@
             // 
             // buttonOpenCSV
             // 
-            this.buttonOpenCSV.Location = new System.Drawing.Point(321, 383);
+            this.buttonOpenCSV.Location = new System.Drawing.Point(327, 398);
             this.buttonOpenCSV.Name = "buttonOpenCSV";
             this.buttonOpenCSV.Size = new System.Drawing.Size(140, 40);
             this.buttonOpenCSV.TabIndex = 0;
@@ -47,20 +47,21 @@
             this.CSV_text.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CSV_text.Location = new System.Drawing.Point(98, 69);
+            this.CSV_text.Font = new System.Drawing.Font("굴림", 8F);
+            this.CSV_text.Location = new System.Drawing.Point(12, 12);
             this.CSV_text.Multiline = true;
             this.CSV_text.Name = "CSV_text";
-            this.CSV_text.Size = new System.Drawing.Size(581, 308);
+            this.CSV_text.Size = new System.Drawing.Size(776, 380);
             this.CSV_text.TabIndex = 1;
             // 
-            // Form1
+            // TestCSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.CSV_text);
             this.Controls.Add(this.buttonOpenCSV);
-            this.Name = "Form1";
+            this.Name = "TestCSV";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
